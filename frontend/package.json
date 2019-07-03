@@ -6,7 +6,9 @@
     "build": "webpack -p",
     "build-dev": "webpack",
     "watch": "webpack --watch",
-    "lint": "eslint --ext .js src/"
+    "lint": "eslint --ext .js src/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,8 @@
     "prismjs": "^1.11.0",
     "style-loader": "^0.20.2",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
-  }
+    "webpack-cli": "^3.1.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
